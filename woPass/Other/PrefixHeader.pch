@@ -1,0 +1,99 @@
+//
+//  PrefixHeader.pch
+//  woPass
+//
+//  Created by htz on 15/7/6.
+//  Copyright (c) 2015年 unisk. All rights reserved.
+//
+
+#ifndef woPass_PrefixHeader_pch
+#define woPass_PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import "AppMacro.h"
+#import "XBase.h"
+#import "WPUser.h"
+#import "WPUserAuthorManeger.h"
+#import "BaiduMobStat.h"
+#import "WPNetworkManager.h"
+#import "FBKVOController.h"
+#import "NSObject+FBKVOController.h"
+
+#define SCALED(length)         (SCREEN_WIDTH * (length) / 320)
+#define kPadding               10
+#define kFontLarge             16
+#define kFontMiddle            14
+#define kFontTiny              12
+#define kBackgroundColor       0xf8f8f8
+#define kMargineColor          0xe7e7e7
+#define kLabelDarkColor        0x333333
+#define kLabelWeakColor        0x606060
+#define KLabelGreenColor       0x46be1f
+#define kLabelredColor         0xF13231
+#define kPlaceHolderColor      0xbbbbbb
+#define KTextOrangeColor       0xed6d00
+#define kTitleStateOrangeColor 0xe65b10
+#define kDisableBgColor        0xd7d7d7
+#define kDisableTitleColor     0x999999
+#define kTextBlueColor         0x1a70b9
+
+
+#define UserAuthorManager    [WPUserAuthorManeger registerPageManager]
+#define RequestManeger       [WPNetworkManager manager]
+#define BaiduMob             [BaiduMobStat defaultStat]
+
+#define DocPath(file) ([[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:file])
+#define ISLOGINED ([UserAuthorManager gainCurrentStateForUserLoginAndBind] == CurrentUserState_Main)
+
+//
+#define BASEURLONLINE    @"http://passport.wo.cn"
+#define BASEURLTEST      @"http://test.txz.wohulian.cn"
+#define BASEURLDEV       @"http://dev.txz.wohulian.cn"
+
+//#define BASEURLONLINE    @"http://test.txz.wohulian.cn"
+//#define BASEURLTEST      @"http://test.txz.wohulian.cn"
+//#define BASEURLDEV       @"http://test.txz.wohulian.cn"
+
+
+#define SSOBASEURLDEV    @"http://api.wobendi.cn"
+#define SSOBASEURLTEST   @"http://api.wobendi.cn"
+#define SSOBASEURLONLINE @"http://api.wo.cn"
+
+//#define SSOBASEURLDEV    @"http://api.wobendi.cn"
+//#define SSOBASEURLTEST   @"http://api.wobendi.cn"
+//#define SSOBASEURLONLINE @"http://api.wobendi.cn"
+
+#define SSO_MARK @"www.unisk.cn"
+
+#define UniPhoneRegex   @"^1(3[0-2]|5[56]|8[56]|4[5]|7[56])\\d{8}$|^1709\\d{7}$"
+
+//Notification
+extern NSString * const WPMineAppDebindingNotification;
+extern NSString * const WPMineDeviceDeleteNotification;
+extern NSString * const WPMineAppBindingNotification;
+extern NSString * const WPJavaScriptMessageDidHandledNotification;
+extern NSString * const WPSwitchChangeNotification;
+extern NSString * const WPSelectCityNotification;
+extern NSString * const WPInterviewUnikeyDidFinishNotification;
+
+//
+extern void * ALERTVIEWKEY;
+extern void * BUTTONITEMKEY;
+
+//
+extern NSString * const BASEURLKEY;
+extern NSString * const SSOBASEURLKEY;
+
+#endif
+
+#define SafePerformSelector(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#endif

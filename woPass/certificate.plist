@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01</key>
+	<string>身份证</string>
+	<key>02</key>
+	<string>护照</string>
+	<key>05</key>
+	<string>军官证</string>
+	<key>08</key>
+	<string>武警身份证</string>
+	<key>09</key>
+	<string>户口本</string>
+	<key>10</key>
+	<string>港澳居民来往内地通行证</string>
+	<key>11</key>
+	<string>台湾居民来往大陆通行证</string>
+</dict>
+</plist>

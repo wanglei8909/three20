@@ -1,0 +1,15 @@
+//
+//  XBase-prefix.pch
+//  XBase
+//
+//  Created by 臧金晓 on 14/12/23.
+//  Copyright (c) 2014年 7ul.ipa. All rights reserved.
+//
+
+#ifndef XBase_XBase_prefix_pch
+#define XBase_XBase_prefix_pch
+
+#import <UIKit/UIKit.h>
+#import "XBase.h"
+
+#endif

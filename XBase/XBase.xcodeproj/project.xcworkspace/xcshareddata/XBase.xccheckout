@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BF794713-33A4-4DF5-85AC-E5376BB5685C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XBase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85331971-7559-842c-759a-c354fa2b9c60</key>
+		<string>https://vip.svnspot.com/zangjinxiao.xbase</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/XBase/XBase.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85331971-7559-842c-759a-c354fa2b9c60</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85331971-7559-842c-759a-c354fa2b9c60</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85331971-7559-842c-759a-c354fa2b9c60</string>
+			<key>IDESourceControlWCCName</key>
+			<string>zangjinxiao.xbase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
